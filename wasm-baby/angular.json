@@ -140,6 +140,13 @@
       "projectType": "library",
       "prefix": "lib",
       "architect": {
+        "wasm": {
+          "builder": "./builders:wasm",
+          "options": {
+            "inputFile": "projects/layout/src/cpp/test.cpp",
+            "outputFile": "projects/layout/wasm/test.js"
+          }
+        },
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {

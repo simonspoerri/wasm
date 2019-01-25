@@ -6,6 +6,17 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include <emscripten/emscripten.h>
+
+EMSCRIPTEN_KEEPALIVE double power(double x, double y) {
+    std::vector<double> doubles;
+    doubles.push_back(x);
+    doubles.push_back(y);
+
+    return doubles[0];
+}
 
 int main()
 {

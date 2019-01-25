@@ -1,0 +1,17 @@
+{
+    "id": "WasmBuilderSchema",
+    "title": "WASM builder",
+    "description": "WASM builder options",
+    "properties": {
+        "inputFile": {
+            "type": "string",
+            "description": "path to the input file",
+            "default": ""
+        },
+        "outputFile": {
+            "type": "string",
+            "description": "Path to the output file",
+            "default": ""
+        }
+    }
+}

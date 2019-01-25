@@ -24,6 +24,12 @@
       ],
       "layout/*": [
         "dist/layout/*"
+      ],
+      "testproject": [
+        "dist/testproject"
+      ],
+      "testproject/*": [
+        "dist/testproject/*"
       ]
     }
   }

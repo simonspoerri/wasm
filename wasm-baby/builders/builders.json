@@ -1,0 +1,10 @@
+{
+    "$schema": "../node_modules/@angular-devkit/architect/src/builders-schema.json",
+    "builders": {
+        "wasm": {
+            "class": "./WasmBuilder/out/WasmBuilder.js",
+            "schema": "./WasmBuilder/schema.json",
+            "description": "Builder that compiles C++ to WASM"
+        }
+    }
+}
