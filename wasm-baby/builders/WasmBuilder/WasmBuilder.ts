@@ -20,7 +20,10 @@ export default class WasmBuilder implements Builder<WasmBuilderSchema> {
     private async compile(inputFile: string, outputFile: string): Promise<boolean> {
         const compilerPath = await this.getCompilerPath();
         console.log(`[WasmBuilder] Compiling ${inputFile} to ${outputFile}`);
-        const compilationArguments = [`-o`, `${outputFile}`, `${inputFile}`];
+        const compilationArguments = [
+            `-o`, `${outputFile}`,
+            `-s`, `WASM=1`,
+            `${inputFile}`];
         const success = await this.executeCompiler(compilerPath, compilationArguments);
         return success;
     }
